@@ -1,2 +1,24 @@
-# public-establishment-directory
-qui permet de rechercher un etablissement public (mairies, organismes sociaux, services de l'état, etc.)  et avoir des informations comme (adresses, téléphones, site internet, horaires d'ouverture, coordonnées de géolocalisation)
+# my-app
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
