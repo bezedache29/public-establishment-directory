@@ -1,17 +1,20 @@
 <template>
   <div>
     <header-app />
+    <home-app />
   </div>
 </template>
 
 <script>
 
 import HeaderApp from './components/Headers/HeaderApp'
+import HomeApp from './components/Sections/HomeApp'
 
 export default {
   name: 'App',
   components: {
-    HeaderApp
+    HeaderApp,
+    HomeApp
   }
 }
 </script>

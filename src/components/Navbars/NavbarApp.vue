@@ -12,7 +12,7 @@
   import ButtonNav from './../Buttons/ButtonNav'
 
   export default {
-    name:"",
+    name:"navbar-app",
 
     components: {
       ButtonNav

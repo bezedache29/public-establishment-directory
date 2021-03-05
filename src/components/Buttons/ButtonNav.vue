@@ -4,7 +4,7 @@
 
 <script>
   export default {
-    name:"",
+    name:"button-nav",
     data() {
       return {
         
@@ -20,6 +20,7 @@
     background-color: #B8C3F5;
     border: none;
     font-size: 18px;
+    outline: none;
   }
   button:hover {
     color: #4A48F5;
