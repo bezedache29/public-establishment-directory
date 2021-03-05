@@ -1,4 +1,5 @@
 <template>
+
   <div>
     <header-app />
     <home-app />
@@ -10,9 +11,12 @@
 import HeaderApp from './components/Headers/HeaderApp'
 import HomeApp from './components/Sections/HomeApp'
 
+<script>
+
 export default {
   name: 'App',
   components: {
+
     HeaderApp,
     HomeApp
   }
@@ -20,6 +24,7 @@ export default {
 </script>
 
 <style>
+
 /*** RESET ***/
 html {
     box-sizing: border-box;
