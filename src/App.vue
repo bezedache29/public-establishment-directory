@@ -1,7 +1,8 @@
 <template>
   <div>
-    <header-app />
-    <home-app />
+    <header-app @is-home="changeContainer($event)" />
+    <home-app v-if="home" />
+    <search-app v-else />
   </div>
 </template>
 
@@ -9,13 +10,23 @@
 
 import HeaderApp from './components/Headers/HeaderApp'
 import HomeApp from './components/Sections/HomeApp'
+import SearchApp from './components/Sections/SearchApp'
 
 export default {
   name: 'App',
+
   components: {
     HeaderApp,
-    HomeApp
-  }
+    HomeApp,
+    SearchApp
+  },
+
+  data() {
+    return {
+      home: true
+    }
+  },
+
 }
 </script>
 
