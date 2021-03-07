@@ -5,10 +5,10 @@
     &__title {
         text-align: center;
         margin: 20px 0 40px 0;
-        border: 1px solid #053f95;
+        border: 1px solid $blue-primary;
         border-radius: 10px;
-        background-color: #053f95;
-        color:#f1f1f1;
+        background-color: $blue-primary;
+        color: $white-secondary;
         padding: 10px 0;
         font-size: 3.5vw;
     }

@@ -29,7 +29,16 @@ body {
     background-color:#f2f2f2;
 }
 
-/*** ***/
+/*** Racourcis ***/
+.ml-1 {
+    margin-left: 10px;
+}
+.mr-1 {
+    margin-right: 10px;
+}
+
+
+/*** Imports ***/
 
 @import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap'),
         './variables',
@@ -37,4 +46,5 @@ body {
         './../../components/Sections/HomeApp/home-app',
         './../../components/Sections/SearchApp/search-app',
         './../../components/Buttons/button-nav',
-        './../../components/Layouts/Headers/header-app'
+        './../../components/Layouts/Headers/header-app',
+        './../../components/Layouts/Navbars/navbar-app'

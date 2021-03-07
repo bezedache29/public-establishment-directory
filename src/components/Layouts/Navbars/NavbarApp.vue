@@ -1,6 +1,6 @@
 <template>
-  <nav>
-    <ul class="navbar">
+  <nav class="navbar">
+    <ul class="navbar__list">
       <li class="ml-1 mr-1"><button-nav>Accueil</button-nav></li>
       <li><button-nav>Rechercher</button-nav></li>
     </ul>
@@ -9,6 +9,7 @@
 
 <script>
 
+  import './../../../assets/scss/style.scss'
   import ButtonNav from './../../Buttons/ButtonNav'
 
   export default {
@@ -25,19 +26,3 @@
     },
   }
 </script>
-
-<style scoped>
-  nav {
-    width :100%;
-  }
-  .navbar {
-    display: flex;
-    align-items: center;
-  }
-  .ml-2 {
-    margin-left: 10px;
-  }
-  .mr-2 {
-    margin-right: 10px;
-  }
-</style>
