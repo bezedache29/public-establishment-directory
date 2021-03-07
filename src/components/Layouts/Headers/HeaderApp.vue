@@ -1,12 +1,13 @@
 <template>
-  <header>
-    <img class="image" :src="getImgUrl(logo)" alt="Logo du site" />
+  <header class="header-app">
+    <img class="header-app__image" :src="getImgUrl(logo)" alt="Logo du site" />
     <navbar-app />
   </header>
 </template>
 
 <script>
 
+  import './../../../assets/scss/style.scss'
   import NavbarApp from './../Navbars/NavbarApp'
 
   export default {
@@ -24,23 +25,9 @@
 
     methods: {
       getImgUrl(name){
-        var images = require.context('../../assets', false, /\.png$/)
+        var images = require.context('../../../assets', false, /\.png$/)
         return images('./' + name + ".png")
       }
     }
   }
 </script>
-
-<style scoped>
-  header {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    background-color: #B8C3F5;
-  }
-  .image {
-    width: 70px;
-    height: 70px;
-    margin: 0 20px;
-  }
-</style>

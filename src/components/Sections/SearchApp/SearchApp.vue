@@ -1,12 +1,13 @@
 <template>
-  <div>
-
-  </div>
+  <h1>Search Page</h1>
 </template>
 
 <script>
+
+  import './_search-app.scss'
+
   export default {
-    name:"home-app",
+    name:"",
     data() {
       return {
         
@@ -14,7 +15,3 @@
     },
   }
 </script>
-
-<style scoped>
-  
-</style>
