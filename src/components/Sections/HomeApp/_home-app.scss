@@ -1,0 +1,42 @@
+.home {
+    margin: 0 2%;
+    padding-bottom: 20px;
+
+    &__title {
+        text-align: center;
+        margin: 20px 0 40px 0;
+        border: 1px solid #053f95;
+        border-radius: 10px;
+        background-color: #053f95;
+        color:#f1f1f1;
+        padding: 10px 0;
+        font-size: 3.5vw;
+    }
+
+    &__container {
+        margin: 0 2%;
+
+        &__description {
+            font-size: 1.5em;
+            margin: 20px 0;
+
+            &--link {
+                color: $blue-primary;
+
+                &:hover {
+                    color: $red-primary;
+                }
+            }
+        }
+    
+        &__list {
+            font-size: 1.5em;
+        }
+
+        &__signature {
+            font-family: $font-signature;
+            font-size: 3em;
+        }
+
+    }
+}

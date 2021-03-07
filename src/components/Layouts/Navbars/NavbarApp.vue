@@ -9,7 +9,7 @@
 
 <script>
 
-  import ButtonNav from './../Buttons/ButtonNav'
+  import ButtonNav from './../../Buttons/ButtonNav'
 
   export default {
     name:"navbar-app",

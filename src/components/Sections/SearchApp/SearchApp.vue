@@ -1,13 +1,13 @@
 <template>
-  <button class="btn btn--nav"><slot></slot></button>
+  <h1>Search Page</h1>
 </template>
 
 <script>
 
-  import './../../assets/scss/style.scss'
+  import './_search-app.scss'
 
   export default {
-    name:"button-nav",
+    name:"",
     data() {
       return {
         

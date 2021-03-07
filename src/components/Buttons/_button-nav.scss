@@ -1,0 +1,15 @@
+.btn {
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &--nav {
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+        outline: none;
+
+        &:hover {
+            color: $blue-primary;
+        }
+    }
+}
