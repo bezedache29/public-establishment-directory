@@ -30,6 +30,9 @@
             &--input {
                 font-size: 1.5em;
                 padding: 10px 20px;
+                border-radius: 10px;
+                border: 1px solid $blue-primary;
+                outline: none;
             }
         }
     }

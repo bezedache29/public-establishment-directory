@@ -20,7 +20,7 @@
           class="search__container__form-group--input" 
           id="department" 
           type="number" 
-          v-model="department" 
+          v-model.trim="department" 
           placeholder="Ex: 29"
           @keyup="searchDept"
         />
@@ -79,7 +79,7 @@
 
       toEtablishment(etablishment) {
 
-        if (this.department === null) {
+        if (this.department === null || this.department === '') {
           this.department = 29
         }
 
@@ -99,6 +99,7 @@
           this.department = null
           this.results = response.data.features
         })
+
       }
     },
 
@@ -106,9 +107,6 @@
       this.axios.get(`${this.apiUrl}/29/${this.etablishment}`)
       .then((response) => {
         this.results = response.data.features
-
-
-        console.log(this.results)
       })
     }
   }
