@@ -73,7 +73,6 @@
           this.axios.get(`${this.apiUrl}/${this.department}/${this.etablishment}`)
           .then((response) => {
             this.results = response.data.features
-            this.department = null
           })
         }
       },
@@ -82,6 +81,16 @@
 
         if (this.department === null) {
           this.department = 29
+        }
+
+        if (etablishment === 'mairie') {
+          this.etablishmentName = 'Mairies'
+        } else if (etablishment === 'commissariat_police') {
+          this.etablishmentName = 'Commisseriats de police'
+        } else if (etablishment === 'pole_emploi') {
+          this.etablishmentName = 'Pôles emploi'
+        } else {
+          this.etablishmentName = 'Préfectures'
         }
 
         this.axios.get(`${this.apiUrl}/${this.department}/${etablishment}`)
@@ -97,6 +106,9 @@
       this.axios.get(`${this.apiUrl}/29/${this.etablishment}`)
       .then((response) => {
         this.results = response.data.features
+
+
+        console.log(this.results)
       })
     }
   }
