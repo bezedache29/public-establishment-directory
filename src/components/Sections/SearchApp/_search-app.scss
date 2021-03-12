@@ -1,0 +1,36 @@
+.search {
+    margin: 0 2%;
+    padding-bottom: 20px;
+
+    &__title {
+        text-align: center;
+        margin: 20px 0 40px 0;
+        border: 1px solid $blue-primary;
+        border-radius: 10px;
+        background-color: $blue-primary;
+        color: $white-secondary;
+        padding: 10px 0;
+        font-size: 3.5vw;
+    }
+
+    &__container {
+        margin: 0 2%;
+
+        &__form-group {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &--label {
+                margin-bottom: 20px;
+                font-size: 1.5em;
+            }
+
+            &--input {
+                font-size: 1.5em;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
