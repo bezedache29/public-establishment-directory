@@ -1,0 +1,23 @@
+.button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: $blue-secondary;
+    border: none;
+    border-radius: 10px;
+    color: $white-secondary;
+    margin: 5px 10px;
+    outline: none;
+
+    &:hover {
+        background-color: $blue-primary;
+    }
+
+    &--active {
+        background-color: $blue-primary;
+    }
+
+    &--inactive {
+        background-color: $blue-secondary;
+    }
+}

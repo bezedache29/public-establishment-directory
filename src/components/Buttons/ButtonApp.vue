@@ -1,5 +1,5 @@
 <template>
-  <button>
+  <button :class="isActive">
     <slot></slot>
   </button>
 </template>
@@ -8,9 +8,13 @@
 export default {
   name: "button-app",
 
-  data() {
-    return {
+  props: {
+    active: String
+  },
 
+  computed: {
+    isActive() {
+      return ['button', {'button--active': (this.active === 'activeOn'), 'button--inactive': (this.active === 'activeOff')}]
     }
   }
 }

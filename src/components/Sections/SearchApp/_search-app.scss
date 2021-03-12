@@ -35,5 +35,23 @@
                 outline: none;
             }
         }
+
+        &__buttons {
+            margin: 40px 0;
+            display: flex;
+            justify-content: center;
+        }
     }
 }
+
+@media screen and (max-width: 375px) {
+    .search {
+
+        &__container {
+
+            &__buttons {
+                flex-direction: column;
+            }
+        }
+    }
+  }

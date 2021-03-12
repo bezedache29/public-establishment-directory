@@ -27,10 +27,10 @@
       </div>
 
       <div class="search__container__buttons">
-        <button-app @click="toEtablishment('mairie')">Mairies</button-app>
-        <button-app @click="toEtablishment('commissariat_police')">Commisériats de police</button-app>
-        <button-app @click="toEtablishment('pole_emploi')">Pôles emploi</button-app>
-        <button-app @click="toEtablishment('prefecture')">Préfectures</button-app>
+        <button-app @click="toEtablishment('mairie')" :active="etablishment === 'mairie' ? 'activeOn' : 'activeOff'">Mairies</button-app>
+        <button-app @click="toEtablishment('commissariat_police')" :active="etablishment === 'commissariat_police' ? 'activeOn' : 'activeOff'">Commisériats de police</button-app>
+        <button-app @click="toEtablishment('pole_emploi')" :active="etablishment === 'pole_emploi' ? 'activeOn' : 'activeOff'">Pôles emploi</button-app>
+        <button-app @click="toEtablishment('prefecture')" :active="etablishment === 'prefecture' ? 'activeOn' : 'activeOff'">Préfectures</button-app>
       </div>
 
       <div class="search__container__results">
@@ -63,7 +63,7 @@
         results: {},
         etablishment: 'mairie',
         etablishmentName: 'Mairies',
-        apiUrl: 'https://etablissements-publics.api.gouv.fr/v3/departements'
+        apiUrl: 'https://etablissements-publics.api.gouv.fr/v3/departements',
       }
     },
 
