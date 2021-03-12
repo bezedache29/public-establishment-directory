@@ -99,7 +99,6 @@
           this.department = null
           this.results = response.data.features
         })
-
       }
     },
 
