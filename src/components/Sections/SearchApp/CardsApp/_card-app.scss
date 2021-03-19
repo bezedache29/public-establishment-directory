@@ -1,0 +1,84 @@
+.card {
+    width: 50%;
+    padding: 10px;
+
+    &__infos {
+        border: 2px solid $blue-primary;
+        font-size: 1.5em;
+        border-radius: 8px;
+
+        &__title {
+            background-color: $blue-secondary;
+            padding: 10px;
+            color: $white-secondary;
+        }
+
+        &__body {
+            padding: 10px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+
+            &__tel {
+                font-size: 1.8em;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            &__adress {
+                margin-bottom: 20px;
+                
+                &--title {
+                    font-weight: 600;
+                }
+            }
+
+            &__hours {
+                margin-bottom: 20px;
+
+                &--title {
+                    font-weight: 600;
+                }
+
+                &--description {
+                    margin: 5px 0;
+                }
+            }
+
+            &__link {
+                margin-top: auto;
+                margin: 20px 0;
+            }
+        }
+
+        &:hover {
+            background-color: $blue-bg;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        width: 100%;
+
+        &__infos {
+
+            &__body {
+                height: auto;
+
+                &__tel {
+                    font-size: 1.3em;
+                    margin: 15px 0;
+                }
+
+                &__adress {
+                    font-size: 1.2em;
+                }
+
+                &__hours {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}

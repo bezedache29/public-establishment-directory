@@ -3,11 +3,11 @@
     <h1 class="home__title">Annuaire des établissements publics de l'administration</h1>
     <div class="home__container">
       <p class="home__container__description">
-        Cette application a pour but de trouver les coordonées d'un établissement public de l'administration, comme :
+        Cette application a pour but de trouver les coordonnées d'un établissement public de l'administration, comme :
       </p>
       <ul class="home__container__list">
         <li>- Mairies</li>
-        <li>- Commiseriats de police</li>
+        <li>- Commisariats de police</li>
         <li>- Pôles emploi</li>
         <li>- Préfectures</li>
       </ul>

@@ -41,6 +41,26 @@
             display: flex;
             justify-content: center;
         }
+
+        &__results {
+
+            &__title {
+                font-size: 2.3em;
+                font-weight: bold;
+                margin-bottom: 20px;
+
+                &--name {
+                    color: $blue-primary;
+                }
+            }
+
+            &__cards {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-flow: row wrap;
+            }
+        }
     }
 }
 
@@ -51,6 +71,18 @@
 
             &__buttons {
                 flex-direction: column;
+            }
+
+            &__results {
+
+                &__title {
+                    font-size: 1.8em;
+                    text-align: center;
+                }
+
+                &__cards {
+                    flex-direction: column;
+                }
             }
         }
     }

@@ -1,0 +1,11 @@
+.btn-cta {
+    border-radius: 5px;
+    color: $white-secondary;
+    background-color: $blue-secondary;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $blue-primary;
+    }
+}
