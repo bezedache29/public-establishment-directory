@@ -4,16 +4,6 @@
 
     <div class="search__container">
 
-      <!-- <div class="search__container__form-group">
-        <h2>Que recherchez vous ?</h2>
-        <ul>
-          <li>Mairie</li>
-          <li>Commiseriats de police</li>
-          <li>Pôle emploi</li>
-          <li>Préfecture</li>
-        </ul>
-      </div> -->
-
       <div class="search__container__form-group">
         <label class="search__container__form-group--label" for="department">Indiquez le numéro du département</label>
         <input 
@@ -34,10 +24,10 @@
       </div>
 
       <div class="search__container__results">
-        <h2>Type de recherche : {{ etablishmentName }}</h2>
+        <h2 class="search__container__results__title">Type de recherche : <span class="search__container__results__title--name">{{ etablishmentName }}</span></h2>
 
         <div class="search__container__results__cards">
-          <card-app v-for="(result, index) in results" :key="index"></card-app>
+          <card-app v-for="(result, index) in results" :key="index" :infos="result"></card-app>
         </div>
       </div>
 
@@ -86,7 +76,7 @@
         if (etablishment === 'mairie') {
           this.etablishmentName = 'Mairies'
         } else if (etablishment === 'commissariat_police') {
-          this.etablishmentName = 'Commisseriats de police'
+          this.etablishmentName = 'Commissariats de police'
         } else if (etablishment === 'pole_emploi') {
           this.etablishmentName = 'Pôles emploi'
         } else {
@@ -96,7 +86,7 @@
         this.axios.get(`${this.apiUrl}/${this.department}/${etablishment}`)
         .then((response) => {
           this.etablishment = etablishment
-          this.department = null
+          // this.department = null
           this.results = response.data.features
         })
       }
